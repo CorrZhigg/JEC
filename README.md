@@ -1,2 +1,0 @@
-# JEC
-JEC Site
