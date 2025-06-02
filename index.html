@@ -6,7 +6,7 @@
   <title>JEC Home Improvement - Home</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body style="margin: 0;">
 
 <header style="display: flex; align-items: center; justify-content: space-between;">
   <h1 style="margin: 0;">
@@ -15,17 +15,17 @@
       JEC Home Improvement
     </a>
   </h1>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About Us</a> |
-    <a href="services.html">Services</a> |
-    <a href="contact.html">Contact</a>
-  </nav>
+<nav style="margin-right: 40px;">
+  <a href="index.html">Home</a> |
+  <a href="about.html">About Us</a> |
+  <a href="services.html">Services</a> |
+  <a href="contact.html">Contact</a>
+</nav>
 </header>
 
-<section id="hero" style="position: relative; min-height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center; overflow: hidden;">
-  <img src="jecskyline.jpg" alt="Hero Background" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;"/>
-  <div style="position: relative; z-index: 1; color: white; text-shadow: 1px 1px 8px #000;">
+<section id="hero" style="position: relative; min-height: 400px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; overflow: hidden;">
+  <img src="jecskyline.jpg" alt="Hero Background" style="position: absolute; top: 0; left: 50%; width: 100vw; height: 100%; object-fit: cover; z-index: 0; transform: translateX(-50%);" />
+  <div style="position: relative; z-index: 1; color: white; text-shadow: 1px 1px 8px #000; margin-left: 40px; margin-top: 40px;">
     <h2>Your Trusted Construction Partner</h2>
     <p>Quality workmanship, dependable service, and affordable prices.</p>
   </div>
