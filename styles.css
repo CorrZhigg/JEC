@@ -1,0 +1,28 @@
+#about-us h2 {
+  font-size: 3.5vw;
+}
+#about-us p {
+  font-size: 1.5vw;
+}
+@media (max-width: 900px) {
+  #about-us {
+    flex-direction: column !important;
+  }
+  #about-us > div {
+    width: 100% !important;
+  }
+  #about-us h2 {
+    font-size: 5vw;
+  }
+  #about-us p {
+    font-size: 3vw;
+  }
+}
+@media (max-width: 600px) {
+  #about-us h2 {
+    font-size: 7vw;
+  }
+  #about-us p {
+    font-size: 4vw;
+  }
+}

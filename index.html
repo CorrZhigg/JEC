@@ -8,33 +8,58 @@
 </head>
 <body style="margin: 0;">
 
-<header style="display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0 3vw; box-sizing: border-box;">
+<header id="main-header" style="position: fixed; top: 0; left: 0; width: 100%; z-index: 100; background: transparent; color: black; transition: background 0.3s, color 0.3s; display: flex; align-items: center; justify-content: space-between; padding: 0 3vw; box-sizing: border-box;">
   <h1 style="margin: 0; font-size: 3vw;">
-    <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+    <a href="index.html" style="text-decoration: none; color: black; display: flex; align-items: center;">
       <img src="Logo.png" alt="JEC Logo" style="height: 4vw; margin-right: 1vw;" />
       JEC Home Improvement
     </a>
   </h1>
   <nav style="font-size: 1.7vw;">
-    <a href="index.html">Home</a> |
-    <a href="about.html">About Us</a> |
-    <a href="services.html">Services</a> |
-    <a href="contact.html">Contact</a>
+    <a href="index.html" style="color: black;">Home</a> |
+    <a href="about.html" style="color: black;">About Us</a> |
+    <a href="services.html" style="color: black;">Services</a> |
+    <a href="contact.html" style="color: black;">Contact</a>
   </nav>
 </header>
 
-<section id="hero" style="position: relative; width: 100%;">
+<section id="hero" style="position: relative; width: 100%; /* REMOVE margin-top: 6vw; */">
   <div style="position: relative; width: 100%; aspect-ratio: 16/9; overflow: hidden;">
     <img src="Construction About Page.png" alt="Hero Background"
          style="width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; background: #222;" />
   </div>
 </section>
+
+<section id="about-us"
+  style="display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between; padding: 2vw; background-color: white; position: relative;">
+  <div style="width: 55%; text-align: left;">
+    <h2>Modern Spaces, Future-Ready</h2>
+    <hr style="width: 60%; border: 1px solid #ccc; margin: 0 0 2vw 0;">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div style="width: 40%; display: flex; flex-direction: column; align-items: center;">
+    <div id="carousel" style="position: relative; width: 100%; overflow: hidden; border-radius: 1vw;">
+      <img id="carousel-img" src="img4.jpg" alt="Gallery" style="width: 100%; height: 22vw; object-fit: cover; display: block; transition: opacity 0.3s;">
+      <button onclick="prevImg()" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.4); color: #fff; border: none; border-radius: 50%; width: 2vw; height: 2vw; font-size: 1.5vw; cursor: pointer;">&#8592;</button>
+      <button onclick="nextImg()" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.4); color: #fff; border: none; border-radius: 50%; width: 2vw; height: 2vw; font-size: 1.5vw; cursor: pointer;">&#8594;</button>
+    </div>
+  </div>
+</section>
+
 <section id="quote?" 
-  style="padding: 2vw; text-align: left; background-image: url('Quote Background.png'); background-size: cover; background-position: center; height: 18vw; color: #fff; position: relative;">
-  <h2 style="margin-left: 16vw; font-size: 3.5vw;">Want a Free Quote?</h2>
+   style="padding: 2vw; text-align: left; background-image: url('Quote Background.png'); background-size: cover; background-position: center; height: 18vw; color: #fff; position: relative; padding-top: 6vw;">
+  <h2 style="margin-left: 14vw; font-size: 3.5vw;">Want a Free Quote?</h2>
   <button onclick="window.location.href='contact.html'" style="float: right; margin-right: 3.4vw; padding: 1vw 3vw; background: hotpink; color: #fff; border: none; border-radius: 1vw; font-size: 2.7vw; cursor: pointer; margin-top: -1vw;">
     Contact Us!
   </button>
 </section>
+
+
+
+<script src="header-scroll.js"></script>
+<script src="carousel.js"></script>
 </body>
 </html>
