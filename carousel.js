@@ -1,7 +1,7 @@
 const images = [
-  'images/img4.jpg',
-  'images/img2.jpg',
-  'images/img1.JPEG'
+  'img4.jpg',
+  'img2.jpg',
+  'img1.JPEG'
   // Add more image filenames as needed
 ];
 
