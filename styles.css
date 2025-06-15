@@ -126,3 +126,7 @@
     display: none !important; /* Hide the vertical divider on mobile */
   }
 }
+
+#about-bg-blur {
+  transition: background-image 0.3s ease, opacity 0.5s;
+}

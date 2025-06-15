@@ -21,9 +21,9 @@
     </div>
     <!-- Center: Navigation -->
     <nav style="flex: 1; display: flex; justify-content: center; align-items: center; font-size: 2vw; white-space: nowrap; min-width: 0; overflow: hidden;">
-      <a href="index.html" style="color: black; margin: 0 0.7vw;">Home</a>
       <a href="about.html" style="color: black; margin: 0 0.7vw;">About Us</a>
       <a href="services.html" style="color: black; margin: 0 0.7vw;">Services</a>
+      <a href="Portfolio.html" style="color: black; margin: 0 0.7vw;">Portfolio</a>
     </nav>
     <!-- Right: Button -->
     <div style="display: flex; align-items: stretch; white-space: nowrap; min-width: 0; height: 100%;">
@@ -47,36 +47,44 @@
 </section>
 
 <section id="about-us"
-  style="display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between; padding: 2vw; background-color: white; position: relative;">
-  <div style="width: 55%; text-align: left;">
-    <h2>Modern Spaces, Future-Ready</h2>
-    <hr style="width: 60%; border: 1px solid #ccc; margin: 0 0 2vw 0;">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  style="position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 5vw 2vw 2vw 2vw; background: white; overflow: hidden;">
+  <!-- Blurred background -->
+  <div id="about-bg-blur"
+    style="position: absolute; inset: 0; z-index: 0; background-size: cover; background-position: center; filter: blur(16px); opacity: 1; transition: opacity 0.5s;">
   </div>
-  <div style="width: 40%; display: flex; flex-direction: column; align-items: center;">
-    <div id="carousel" style="position: relative; width: 100%; overflow: hidden; border-radius: 1vw;">
-      <img id="carousel-img" src="img4.jpg" alt="Gallery" style="width: 100%; object-fit: cover; display: block; transition: opacity 0.3s;">
-      <button onclick="prevImg()">&#8592;</button>
-      <button onclick="nextImg()">&#8594;</button>
+  <!-- Content -->
+  <div style="position: relative; z-index: 1; background: #111111ef; padding: 3vw; border-radius: 0.7vw; max-width: 900px; width: 100%; text-align: center; box-shadow: 0 4px 24px rgba(0,0,0,0.12);">
+    <h2 style="font-size: 4vw; margin-bottom: 2vw; color: #fff;">Modern Spaces, Future-Ready</h2>
+    <hr style="width: 30%; border: 2px solid #ccc; margin: 0 auto 2vw auto;">
+    <p style="font-size: 2vw; line-height: 1.5; margin-bottom: 3vw; color: #fff;">
+      At the intersection of design, technology, and purpose, we create dynamic spaces built for tomorrow’s needs. Whether it's smart offices, adaptive workspaces, or visionary interiors, our solutions are tailored to meet the demands of a fast-moving world, today and beyond.
+    </p>
+    <div style="width: 100%; max-width: 700px; margin: 0 auto;">
+      <div id="carousel" style="position: relative; width: 100%; overflow: hidden; border-radius: 1vw;">
+        <img id="carousel-img" src="img4.jpg" alt="Gallery" style="width: 100%; height: 32vw; max-height: 400px; object-fit: cover; display: block; transition: opacity 0.3s; border-radius: 1vw;">
+        <button onclick="prevImg()" style="position: absolute; top: 50%; left: 2vw; transform: translateY(-50%); font-size: 2vw; background: rgba(0,0,0,0.4); color: #fff; border: none; border-radius: 50%; width: 3vw; height: 3vw; cursor: pointer;">&#8592;</button>
+        <button onclick="nextImg()" style="position: absolute; top: 50%; right: 2vw; transform: translateY(-50%); font-size: 2vw; background: rgba(0,0,0,0.4); color: #fff; border: none; border-radius: 50%; width: 3vw; height: 3vw; cursor: pointer;">&#8594;</button>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="dual-headers" style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start; padding: 4vw 2vw;">
+<section id="dual-headers" style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start; padding: 2vw 2vw 6vw 2vw;">
   <!-- Left Column -->
   <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
-    <h2 style="margin-bottom: 1vw;">Interior Renovations</h2>
-    <img src="image1.jpg" alt="Image 1" style="width: 80%; max-width: 300px; border-radius: 0.5vw; margin-bottom: 1vw;">
+    <h2 style="margin-bottom: 2vw; font-size: 3vw;">Interior Renovations</h2>
+    <div style="background: #111111ef; padding: 2vw; border-radius: 1vw; width: 100%; max-width: 440px; display: flex; justify-content: center;">
+      <img src="Interior House.JPEG" alt="Interior Renovations" style="width: 95%; max-width: 420px; border-radius: 0.5vw; background: transparent;">
+    </div>
   </div>
   <!-- Vertical Divider -->
-  <div style="width: 2px; background: #ccc; height: 100%; margin: 0 2vw;"></div>
+  <div style="width: 3px; background: #ccc; align-self: stretch; margin: 0 3vw;"></div>
   <!-- Right Column -->
   <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
-    <h2 style="margin-bottom: 1vw;">Exterior Renovations</h2>
-    <img src="image2.jpg" alt="Image 2" style="width: 80%; max-width: 300px; border-radius: 0.5vw; margin-bottom: 1vw;">
+    <h2 style="margin-bottom: 2vw; font-size: 3vw;">Exterior Renovations</h2>
+    <div style="background: #111111ef; padding: 2vw; border-radius: 1vw; width: 100%; max-width: 440px; display: flex; justify-content: center;">
+      <img src="Exterior-House.jpg" alt="Exterior Renovations" style="width: 95%; max-width: 420px; border-radius: 0.5vw; background: transparent;">
+    </div>
   </div>
 </section>
 
