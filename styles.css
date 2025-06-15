@@ -112,3 +112,17 @@
     margin-top: 4vw;
   }
 }
+
+@media (max-width: 700px) {
+  #dual-headers {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  #dual-headers > div {
+    width: 100% !important;
+    max-width: none !important;
+  }
+  #dual-headers > div[style*="background: #ccc"] {
+    display: none !important; /* Hide the vertical divider on mobile */
+  }
+}
