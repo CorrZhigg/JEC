@@ -96,3 +96,19 @@
 #carousel button:last-of-type {
   right: 0.5em;
 }
+
+@media (max-width: 700px) {
+  #about-us {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  #about-us > div {
+    width: 100% !important;
+  }
+  #about-us h2, #about-us p {
+    text-align: left;
+  }
+  #carousel {
+    margin-top: 4vw;
+  }
+}
