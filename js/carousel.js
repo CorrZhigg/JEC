@@ -1,7 +1,7 @@
 const images = [
-  'img4.jpg',
-  'img2.jpg',
-  'img1.JPEG',
+  '../images/img4.jpg',
+  '../images/img2.jpg',
+  '../images/img1.JPEG',
   // Add more image filenames as needed
 ];
 
@@ -16,6 +16,13 @@ window.addEventListener('DOMContentLoaded', () => {
     carouselImg.style.opacity = 0;
     setTimeout(() => {
       carouselImg.src = images[currentImg];
+      // Add zoomed-out class for img1.JPEG if needed
+      const zoomedOut = images[currentImg].includes('img1.JPEG');
+      if (zoomedOut) {
+        carouselImg.classList.add('carousel-zoomed-out');
+      } else {
+        carouselImg.classList.remove('carousel-zoomed-out');
+      }
       carouselImg.style.opacity = 1;
     }, 150);
   }

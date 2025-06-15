@@ -1,3 +1,8 @@
+#main-header {
+  height: 5vw;
+  min-height: 50px;
+}
+
 #carousel {
   position: relative;
   width: 100%;
@@ -69,8 +74,34 @@
     min-height: 120px;
   }
   #carousel button {
-    width: 3.2em;
-    height: 3.2em;
-    font-size: 2.2em;
+    width: 2em;
+    height: 2em;
+    font-size: 1.2em;
   }
+}
+
+.header-quote-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hotpink;
+  color: #fff !important;
+  border: none;
+  border-radius: 0 0 0.4vw 0.4vw;
+  font-size: 1vw;
+  font-weight: bold;
+  padding: 0 2vw;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  margin: 0;
+  white-space: nowrap;
+}
+.header-quote-btn:hover {
+  background: #d72670;
 }
