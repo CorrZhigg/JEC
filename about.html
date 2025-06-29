@@ -6,7 +6,7 @@
   <title>JEC Home Improvement - About Us</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body style="background: #f7f7f7;">
 <header id="main-header" style="position: fixed; top: 0; left: 0; width: 100%; z-index: 100; background: transparent; color: black; transition: background 0.3s, color 0.3s; box-sizing: border-box; padding-left: 2vw; padding-right: 0;">
   <div style="display: flex; align-items: stretch; width: 100%; height: 4vw; min-height: 48px;">
     <!-- Left: Logo/Title -->
@@ -38,14 +38,22 @@
   </div>
 </header>
 
-  <section id="about" style="margin-top: 6vw; display: flex; align-items: flex-start; gap: 3vw;">
-    <img src="IMG_2052.jpeg" alt="About JEC" style="width: 22vw; max-width: 320px; border-radius: 1vw; object-fit: cover; box-shadow: 0 4px 16px rgba(0,0,0,0.12);" />
-    <div>
-      <h2>About Us</h2>
-      <p>At JEC Home Improvement, we bring decades of experience in residential and commercial construction. Our business is committed to delivering excellence on every project.</p>
+  <section id="about" style="margin-top: 6vw; margin-bottom: 3vw; max-width: 1100px; margin-left: auto; margin-right: auto; position: relative; overflow: hidden; border-radius: 1vw; box-shadow: 0 4px 24px rgba(0,0,0,0.10); min-height: 400px;">
+    <div id="about-bg-blur" style="position: absolute; inset: 0; z-index: 0; background-size: cover; background-position: center; filter: blur(18px) brightness(0.95); opacity: 1; transition: background-image 0.5s; pointer-events: none;"></div>
+    <div style="position: relative; z-index: 1; display: flex; align-items: stretch; gap: 3vw; background: #fff; border-radius: 1vw; box-shadow: 0 4px 16px rgba(0,0,0,0.10); overflow: hidden;">
+      <div style="flex: 1; max-width: 340px; display: flex; align-items: center; justify-content: center; background: #f7f7f7; position: relative;">
+        <div id="about-carousel" style="position: relative; width: 90%; aspect-ratio: 4/5; overflow: hidden; border-radius: 1vw; box-shadow: 0 4px 16px rgba(0,0,0,0.10); margin: 2vw 0; background: #eaeaea;">
+          <img id="about-carousel-img" src="IMG_2052.jpeg" alt="About JEC" style="width: 100%; height: 100%; object-fit: cover; border-radius: 1vw; display: block; transition: opacity 0.5s; background: #eaeaea;" />
+          <button id="about-prev" style="position: absolute; top: 50%; left: 1vw; transform: translateY(-50%); font-size: 2vw; background: rgba(0,0,0,0.3); color: #fff; border: none; border-radius: 50%; width: 3vw; height: 3vw; cursor: pointer;">&#8592;</button>
+          <button id="about-next" style="position: absolute; top: 50%; right: 1vw; transform: translateY(-50%); font-size: 2vw; background: rgba(0,0,0,0.3); color: #fff; border: none; border-radius: 50%; width: 3vw; height: 3vw; cursor: pointer;">&#8594;</button>
+        </div>
+      </div>
+      <div style="flex: 2; min-width: 0; display: flex; flex-direction: column; justify-content: center; padding: 3vw 2vw; position: relative;">
+        <h2 style="font-size: 2.7vw; margin-bottom: 1vw; color: #222; text-align: left; letter-spacing: 0.02em;">About Us</h2>
+        <p style="font-size: 1.3vw; line-height: 1.7; color: #444; margin: 0; text-align: left;">At JEC Home Improvement, we believe that every house deserves to be treated like a home — with care, respect, and craftsmanship. As a family-oriented construction company, we bring years of experience, integrity, and attention to detail to every project we take on. Whether it's a renovation, remodel, or a ground-up build, we treat your home as if it were our own, ensuring quality work, open communication, and a stress-free experience from start to finish. Your vision is our mission, and we’re here to build it with pride.</p>
+      </div>
     </div>
   </section>
-
   <footer style="background: #222; color: #f2f2f2; padding: 3vw 2vw 1vw 2vw; margin-top: 0;">
   <div style="max-width: 1200px; margin: 0 auto;">
     <!-- Get in Touch Heading -->
@@ -84,5 +92,6 @@ if (backToTopLink) {
   });
 }
 </script>
+<script src="about-carousel.js"></script>
 </body>
 </html>
