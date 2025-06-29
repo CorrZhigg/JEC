@@ -38,21 +38,48 @@
   </div>
 </header>
 
-  <section id="services">
-    <h2>Services</h2>
-    <h3>Interior Renovations</h3>
-      <li>Service 1</li>
-      <li>Service 2</li>
-      <li>Service 3</li>
-      <li>Service 4</li>
-      <li>Service 5</li>
-    <h3>Exterior Renovations</h3>
-      <li>Service 1</li>
-      <li>Service 2</li>
-      <li>Service 3</li>
-      <li>Service 4</li>
-      <li>Service 5</li>
-  </section>
+<section id="services" style="margin-top: 6vw;">
+  <h2 style="text-align: center;">Portfolio</h2>
+</section>
+
+<footer style="background: #222; color: #f2f2f2; padding: 3vw 2vw 1vw 2vw; margin-top: 0;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <!-- Get in Touch Heading -->
+    <h2 style="text-align: center; font-size: 2.5vw; margin-bottom: 2vw; letter-spacing: 0.05em; color: #fff;">Get in Touch</h2>
+    <!-- Contact Info Row -->
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start; gap: 6vw; margin-bottom: 2vw; flex-wrap: wrap;">
+      <!-- Phone -->
+      <div style="flex: 1 1 200px; min-width: 200px; text-align: center;">
+        <h3 style="font-size: 1.5vw; margin-bottom: 0.7vw; color: #fff;">Phone Number</h3>
+        <p style="font-size: 1.2vw; margin: 0; color: #f2f2f2;"> (551)482-2335</p>
+        <p style="font-size: 1.2vw; margin: 0; color: #f2f2f2;">201-208-1990</p>
+      </div>
+      <!-- Email -->
+      <div style="flex: 1 1 200px; min-width: 200px; text-align: center;">
+        <h3 style="font-size: 1.5vw; margin-bottom: 0.7vw; color: #fff;">Email</h3>
+        <p style="font-size: 1.2vw; margin: 0; color: #f2f2f2;">jechome925@gmail.com</p>
+      </div>
+    </div>
+    <!-- Quick Links -->
+    <div style="border-top: 1px solid #444; margin-top: 2vw; padding-top: 1.5vw; display: flex; flex-direction: row; justify-content: center; gap: 3vw; flex-wrap: wrap;">
+      <a href="#main-header" style="color: #fff; text-decoration: none; font-size: 1.1vw; transition: color 0.2s;">Back to Top</a>
+      <a href="about.html" style="color: #fff; text-decoration: none; font-size: 1.1vw; transition: color 0.2s;">About</a>
+      <a href="Portfolio.html" style="color: #fff; text-decoration: none; font-size: 1.1vw; transition: color 0.2s;">Portfolio</a>
+      <a href="services.html" style="color: #fff; text-decoration: none; font-size: 1.1vw; transition: color 0.2s;">Services</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Smooth scroll all the way to the top for 'Back to Top' link
+const backToTopLink = document.querySelector('a[href="#main-header"]');
+if (backToTopLink) {
+  backToTopLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+</script>
 </body>
 </html>
 
